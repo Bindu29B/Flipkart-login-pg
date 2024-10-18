@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: grid;
+            grid-template-areas:"login cred";
+            grid-template-columns: 40% 60%;
+            height: 500px;
+            width: 700px;
+        }
+        .login{
+           color: white; 
+           background-color: rgb(24, 74, 255);
+           padding: 40px;
+        }
+        .cred{
+            background-color: lightgray;
+            padding: 40px;
+        }
+        img{
+            padding-top:200px;
+            padding-left: 10px;
+            width: 180px;
+            height: 150px;
+        }
+        #p1{
+            color: grey;
+        }
+        #l{
+            padding-top: 300px ;
+            padding-left: 50px;
+        }
+        input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        #c{
+            padding-top: 20px;
+        }
+        a:link {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: purple;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:active {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        button{
+            background-color: rgb(254, 85, 0);
+            border: none;
+            font-size: medium;
+            columns: white;
+            display: block;
+            width: 100%;
+            display: block;
+            padding: 14px 28px;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <h1>
+                Login
+            </h1>
+            <p>
+                Get access to your Orders, Wishlist and Recommendations
+            </p>
+            <img src="./img.png" alt="">
+        </div>
+        <div class="cred">
+            <input type="text" name="text" id="" placeholder="Enter Email/Mobile number">
+            <div id="c">
+                <p>By continuing, you agree to Flipkart's <a href="#">Term of Use</a> and <a href="#">Privacy policy</a></p>
+            </div>
+            <div id="b">
+                <button>Request for OTP</button>
+            </div>
+            <div id="l">
+                <p>New to Flipkart? <a href="#" target="_blank">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
